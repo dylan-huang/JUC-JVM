@@ -8,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 public class Lazy {
 
     private static boolean dylan =false;
-    public Lazy() {
+    private Lazy() {
         synchronized (Lazy.class){
             if(dylan==false){
                 dylan=true;

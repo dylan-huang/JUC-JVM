@@ -10,7 +10,7 @@ public enum EnumSingle {
 
     INSTANCE;
 
-    public EnumSingle getInstance(){
+    private EnumSingle getInstance(){
         return INSTANCE;
     }
 }

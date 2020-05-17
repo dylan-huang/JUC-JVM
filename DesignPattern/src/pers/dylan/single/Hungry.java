@@ -3,7 +3,7 @@ package pers.dylan.single;
 //恶汉式单例
 public class Hungry {
 
-    public Hungry() {
+    private Hungry() {
     }
 
     private final static Hungry HUNGRY = new Hungry();
