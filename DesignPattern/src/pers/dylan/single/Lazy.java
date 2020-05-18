@@ -2,7 +2,6 @@ package pers.dylan.single;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 
 //懒汉式
 public class Lazy {
