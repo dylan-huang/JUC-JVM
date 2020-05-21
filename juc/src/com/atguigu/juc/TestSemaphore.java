@@ -12,10 +12,9 @@ public class TestSemaphore {
 
         Semaphore semaphore = new Semaphore(5);
 
-        for (int i=0;i<8;i++){
-            new Worker(i,semaphore).start();
+        for (int i = 0; i < 8; i++) {
+            new Worker(i, semaphore).start();
         }
-
     }
 
     static class Worker extends Thread {
@@ -32,9 +31,9 @@ public class TestSemaphore {
             try {
                 //获取信号量
                 semaphore.acquire();
-                System.out.println(Thread.currentThread().getName()+ this.num + "开始工作");
+                System.out.println(Thread.currentThread().getName() + this.num + "开始工作");
                 TimeUnit.SECONDS.sleep(5);
-                System.out.println(Thread.currentThread().getName()+ this.num + "完成工作");
+                System.out.println(Thread.currentThread().getName() + this.num + "完成工作");
                 //释放信号量
                 semaphore.release();
             } catch (InterruptedException e) {
