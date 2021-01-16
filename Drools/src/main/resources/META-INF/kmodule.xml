@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+
+    <!-->
+kmodule 可以包含多个kbase，分别对应drl的规则文件
+kbase name="rules"，name名称需要保证唯一
+kbase下面可以有一个或多个ksession，ksession的name属性必须设置，且必须唯一
+kbase的default属性，表示当前KieBase是不是默认的，如果是默认的则不用名称就可以查找到该KieBase，但每个module最多只能有一个默认KieBase
+    <-->
+    <kbase name="rules">
+        <ksession name="all-rules"/>
+    </kbase>
+
+</kmodule>
